@@ -1,15 +1,21 @@
-# Vapor Clean
+### Contents of the folder: 
+    I've created 5 sections: 9 AM, 10 AM, 12 PM, 2 PM, and 4 PM which are numbered in sequence. 
+    /Sources/App folder contains my Student model and rest implementations.
+    /Resources/Leaf contains all the Leaf templates. 
+    I've used SQLite as my database. 
 
-This is a template for Vapor 3 users that does the absolute minimum to set up a working Vapor 3 environment.
+### The system does the following:
+    Allows professor to view all of the sections: Visit the /list webpage to view the students sorted via sections.
+    Allows professor to view students inside of the sections: Visit the /list webpage to view the sorted students list.
+    Allows professor to add students to the section: Visit the homepage to Add students to sections.
+    Allows professor to delete students from the section: Visit the homepage to Delete Student from sections. 
 
-Unlike the official templates that are currently available, this template does not include vast swathes of extra example code that you will always need to delete. Instead, it adds just a single “hello” route so you can be sure everything is working correctly.
-
-Although this repository contains a LICENSE file, this is meant for you to replace with whatever license you intend to use – please consider what little code is in this repository as public domain, and yours to do with as you please.
-
-It’s my hope that the official Vapor project will add a template similar to this one at some point in the future, but until then please use this however you want.
-
-## Try it out
-
-If you have already installed the Vapor toolbox, you can create a new Vapor project from this repo using the following command:
-
-    vapor new MyProject --template=twostraws/vapor-clean
+### In order to check my output: 
+    Download the zipped folder.
+    Extract into desired location. 
+    cd into the location.
+    Type the command: vapor update -y
+    Once the Xcode project is generated, please run the Run scheme and start the server. 
+    Visit the http location where the server has started.
+    
+#   Test out my product!!
