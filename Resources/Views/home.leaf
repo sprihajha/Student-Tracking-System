@@ -1,0 +1,102 @@
+<html>
+<head>
+    <title>HomePage</title>
+    <meta name= "viewport" content = "width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles/skeleton.css">
+    <link rel="stylesheet" href="/styles/skeleton.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <style>
+            html {
+                width: 100%;
+            }
+            body {
+                font-family: 'Raleway', serif;
+                font-size: 30px;
+                width: 100%;
+                box-sizing: border-box;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+        
+        .container {
+            margin: 0 auto;
+        }
+        
+        table {
+            margin: 0 auto;
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="u-full-width">
+                 <div class="three column"><h4>Add Student</h4></div>
+                    <form method="post" action="/create">
+                        <p>Name: <input type="text" name="name" /></p>
+                        <label for="sec">Section</label>
+                         <select class="u-full-width" type="text" name="sec">
+                             <option value="Section 1">9 AM</option>
+                             <option value="Section 2">10 AM</option>
+                             <option value="Section 3">12 AM</option>
+                             <option value="Section 4">2 PM</option>
+                             <option value="Section 5">4 PM</option>
+                         </select>
+                         <input class="button-primary" type="submit" value="Submit">
+                     </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="u-full-width">
+                <div class="three column"><h4>Student List</h4></div>
+                    <select class="u-full-width" type="text" name="sec">
+                        <option value="Section 1">9 AM</option>
+                        <option value="Section 2">10 AM</option>
+                        <option value="Section 3">12 AM</option>
+                        <option value="Section 4">2 PM</option>
+                        <option value="Section 5">4 PM</option>
+                    </select>
+                    <input class="button-primary" type="submit" value="Filter">
+                    <table class="u-full-width">
+                       <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Section</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            #for(Student in Students){
+                            <tr>
+                                <td>#(Student.id)</td>
+                                <td>#(Student.name)</td>
+                                <td>#(Student.sec)</td>
+                            </tr>}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="u-full-width">
+                <div class="three column"><h4>Delete Student</h4></div>
+                    <form method="post" action="/delete">
+                        <p>Name: <input type="text" name="name" /></p>
+                        <label for="sec">Section</label>
+                        <select class="u-full-width" type="text" name="sec">
+                            <option value="Section 1">9 AM</option>
+                            <option value="Section 2">10 AM</option>
+                            <option value="Section 3">12 AM</option>
+                            <option value="Section 4">2 PM</option>
+                            <option value="Section 5">4 PM</option>
+                        </select>
+                        <p> <input value="Delete" type="submit"/></p>
+                    </form>
+                </div>
+             </div>
+        </div>
+    </div>
+</body>
+</html>

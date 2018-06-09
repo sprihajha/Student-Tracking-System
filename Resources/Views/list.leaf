@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>List of Students</title>
+</head>
+<body>
+    <div class="row">
+        <div class="u-full-width">
+            <div class="three column"><h4>Student List</h4></div>
+            <select class="u-full-width" type="text" name="sec">
+                <option value="Section 1">9 AM</option>
+                <option value="Section 2">10 AM</option>
+                <option value="Section 3">12 AM</option>
+                <option value="Section 4">2 PM</option>
+                <option value="Section 5">4 PM</option>
+            </select>
+            <input class="button-primary" type="submit" value="Filter">
+        <table class="u-full-width">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Section</th>
+            </tr>
+            </thead>
+            <tbody>
+                #for(Student in Students){
+                <tr>
+                <td>#(Student.id)</td>
+                <td>#(Student.name)</td>
+                <td>#(Student.sec)</td>
+                </tr>}
+            </tbody>
+        </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
